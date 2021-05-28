@@ -1,4 +1,3 @@
-
 -- LOADCHECK
 if not game:IsLoaded() then
     local loadedcheck = Instance.new("Message", workspace)
@@ -144,7 +143,7 @@ end
 -- USE PET TO HEAL 
 if brolyworld == true and getgenv().Settings.UsePetToHeal == true then
     repeat 
-        if Char.Humanoid.Health < 30/100 * plrhealth then
+        if Char.Humanoid.Health < getgenv().Settings.UsePetToHealAtHealthPer/100 * plrhealth then
             game:GetService("Players").LocalPlayer.Backpack.ServerTraits.Assist:FireServer()
         end
     until Char.Humanoid.Health == plrhealth * 2
