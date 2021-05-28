@@ -126,7 +126,7 @@ if game.PlaceId == 2050207304 then
 end
 -- GODFORM 
 if getgenv().Settings.GodForm == true then
-    runserv:RenderStepped():connect(function()
+    runserv.RenderStepped:connect(function()
         if plrhealth < 15/100 * plrhealth and ki < 15/100 * ki then
             game.Players.LocalPlayer.Backpack.ServerTraits.Transform:FireServer("g")
         end
