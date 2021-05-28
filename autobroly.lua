@@ -26,10 +26,6 @@ UsePetToHealAtHealthPer = "35%"; -- IF U HAVE UsePetToHeal ON CHOOSE AT WHAT HEA
 UsePetToDamage = true; -- MUST HAVE EXPLOSION VEGETA
 EarthOrQueue = "Queue" -- COMING SOON
 }
--- KEY CHECK
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TheSilasDev/AutoBroly/main/key.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TheSilasDev/AutoBroly/main/key%20check.lua"))()
-
 -- LOADCHECK
 if not game:IsLoaded() then
     local loadedcheck = Instance.new("Message", workspace)
@@ -157,7 +153,7 @@ if game.PlaceId == 2050207304 then
 end
 -- GODFORM 
 if getgenv().Settings.GodForm == true then
-    runserv:RenderStepped:connect(function()
+    runserv:RenderStepped():connect(function()
         if plrhealth < 15/100 * plrhealth and ki < 15/100 * ki then
             game.Players.LocalPlayer.Backpack.ServerTraits.Transform:FireServer("g")
         end
