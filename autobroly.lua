@@ -50,7 +50,7 @@ if getgenv().Settings.EarthOrQueue == "Queue" and game.PlaceId == 536102540 then
 if getgenv().Settings.EarthOrQueue == "Earth" and game.PlaceId == 536102540 then
     Char.LowerTorso:Destroy()
     wait(.2)
-    TweenServ(Char:WaitForChild("HumanoidRootPart"), CFrame.new(2750, 3944, -2267), 1)
+    TweenServ(Char:WaitForChild("HumanoidRootPart"), CFrame.new(2750, 3944, -2267), 1.5)
 end
 
 -- QUEUE PAD TELEPORT AND BROLY WORLD CHECK
