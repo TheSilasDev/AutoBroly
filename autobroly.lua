@@ -27,7 +27,7 @@ local brolyworld
 local plrhealth = game:GetService("Players").LocalPlayer.Character.Humanoid.Health
 local Live = game:WaitForChild("Workspace").Live
 local Char = Live:WaitForChild(game.Players.LocalPlayer.Name)
-local ki = Char.Ki.value
+local ki = Char:WaitForChild("Ki").value
 local runserv = game:GetService("RunService")
 -- TWEENSERVICE FUNCTION 
 function TweenServ(IDK, SelectedPad, Length)
