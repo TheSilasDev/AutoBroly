@@ -1,31 +1,4 @@
 
---UNOBFUSCATED PART
-Move1 = "Meteor Crash"
-Move2 = "Anger Rush"
-Move3 = "Wolf Fang Fist"
-Move4 = "Neo Wolf Fang Fist"
-Move5 = "Deadly Dance"
-Move6 = "TS Molotov"
-Move7 = "Sweep Kick"
-Move8= ""
-Move9 = ""
-Move10 = ""
-Move11 = ""
-Move12 = ""
-Move13 = ""
-
-getgenv().Settings = {
-antileech = false;
-AllowAntiLeechBypassPlayer = false; -- Players that will be ignored by the antileech
-AntiLeechBypassPlayerName =""; -- If AllowAntiLeechBypassPlayer is false then u can leave this empty
-FormType = "h"; -- IF U ANDROID IT'LL AUTODETECT, SO JUST LEAVE IT AS IT IS
-AutoPunch = true;
-GodForm = true;
-UsePetToHeal = false; -- MUST HAVE KRILLIN OR WHIS
-UsePetToHealAtHealthPer = "35%"; -- IF U HAVE UsePetToHeal ON CHOOSE AT WHAT HEALTH % WILL U BE HEALED
-UsePetToDamage = true; -- MUST HAVE EXPLOSION VEGETA
-EarthOrQueue = "Queue" -- COMING SOON
-}
 -- LOADCHECK
 if not game:IsLoaded() then
     local loadedcheck = Instance.new("Message", workspace)
