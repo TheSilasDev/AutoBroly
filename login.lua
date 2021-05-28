@@ -1,7 +1,7 @@
 
 local PlayerName = game:GetService("Players").LocalPlayer.Name
 local WhiteListedPlayers = {
-    "gamer_9470", "Rayveus", "Draco_Meteorite52k", "ElectryTwo", "potier21", "andrej2321"
+    "gamer_9470", "Rayveus", "Draco_Meteorite52k", "ElectryTwo", "potier21", "andrej2321", "fordelletedbyroblox"
 }
 if table.find(WhiteListedPlayers, PlayerName) then
     print("Whitelist 1 Passed")
