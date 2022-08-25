@@ -5,6 +5,7 @@ local WhiteListedPlayers = {
 }
 if table.find(WhiteListedPlayers, PlayerName) then
     print("Whitelist 1 Passed")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheSilasDev/AutoBroly/main/autobroly.lua"))()
 else
     print("not cool")
     game:GetService("Players").LocalPlayer:Kick("Not Whitelisted")
